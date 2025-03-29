@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the application JAR file into the container
-COPY target/hello-world-spring-boot.jar app.jar
+COPY target/*.jar app.jar
 
 # Expose the application port
 EXPOSE 8084
